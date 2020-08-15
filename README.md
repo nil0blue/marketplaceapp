@@ -45,12 +45,12 @@ e.g. pid-eb7927c8-dd66-43e1-b0cf-c346a422063
 - Install-Module -Name AzureRM.Resources 
 -  Install-Module -Name  Azure.Storage 
 - Connect-AzureRmAccount
-- .\Deploy-AzureResourceGroup.ps1 -ArtifactStagingDirectory complianceapp -ResourceGroupLocation eastus -UploadArtifacts -ValidateOnly 
+- `.\Deploy-AzureResourceGroup.ps1 -ArtifactStagingDirectory complianceapp -ResourceGroupLocation eastus -UploadArtifacts -ValidateOnly 
  
 
 
 
-Output from the validation of the script:
+`Output from the validation of the script:
  Using template file:  complianceapp\azuredeploy.json
 Using parameter file: complianceapp.\azuredeploy.parameters.json
 Running a ResourceGroup scoped deployment...
@@ -236,11 +236,11 @@ Tags              :
 ResourceId        : /subscriptions/6ebd2f8c-21d7-4e7c-a99c-2673781552f6/resourceGroups/complianceapp
 
 
-Template is valid.
+Template is valid.`
  
 
 ==============================
- .\SideLoad-CreateUIDefinition.ps1 -ArtifactsStagingDirectory complianceapp 
+` .\SideLoad-CreateUIDefinition.ps1 -ArtifactsStagingDirectory complianceapp `
 
 Enter credentials to log on to the Azure Portal and fill out the UI parameters.
 Open the browser Developer Tools and Console and Copy the Parameters json output that appears there.
@@ -248,19 +248,7 @@ Paste the parameters into the azuredeploy.json.parameters file.
 
 Validate the template again:
 
- .\Deploy-AzureResourceGroup.ps1 -ArtifactStagingDirectory complianceapp -ResourceGroupLocation eastus -UploadArtifacts -ValidateOnly 
-
-
-==============================
-
-Alternate method to validate:
-cd template-validation-tests
-
-npm --folder=..\..\complianceapp run all
-
-==============================
-
-
+ `.\Deploy-AzureResourceGroup.ps1 -ArtifactStagingDirectory complianceapp -ResourceGroupLocation eastus -UploadArtifacts -ValidateOnly `
 
 
 
