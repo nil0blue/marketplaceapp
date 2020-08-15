@@ -2,11 +2,73 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "adminUsername": {
-            "value": "GEN-UNIQUE"
-        },
-        "adminPasswordOrKey": {
-            "value": "GEN-SSH-PUB-KEY"
-        }
-    }
+  "location": {
+    "value": "eastus"
+  },
+  "vmName": {
+    "value": "linux-vm"
+  },
+  "adminUsername": {
+    "value": "niloufer"
+  },
+  "authenticationType": {
+    "value": "password"
+  },
+  "adminPasswordOrKey": {
+    "value": "Complex.Password"
+  },
+  "vmSize": {
+    "value": "Standard_B1s"
+  },
+  "storageNewOrExisting": {
+    "value": "new"
+  },
+  "storageAccountName": {
+    "value": "linuxvm5cf41bddf9"
+  },
+  "storageAccountType": {
+    "value": "Standard_LRS"
+  },
+  "storageAccountResourceGroupName": {
+    "value": "Marketplace"
+  },
+  "virtualNetworkNewOrExisting": {
+    "value": "new"
+  },
+  "virtualNetworkName": {
+    "value": "VirtualNetwork"
+  },
+  "addressPrefixes": {
+    "value": [
+      "10.0.0.0/16"
+    ]
+  },
+  "subnetName": {
+    "value": "Subnet-1"
+  },
+  "subnetPrefix": {
+    "value": "10.0.0.0/24"
+  },
+  "virtualNetworkResourceGroupName": {
+    "value": "Marketplace"
+  },
+  "publicIpNewOrExisting": {
+    "value": "new"
+  },
+  "publicIpName": {
+    "value": "linux-vm-ip"
+  },
+  "publicIpDns": {
+    "value": "linux-vm-7367217d56"
+  },
+  "publicIpResourceGroupName": {
+    "value": "Marketplace"
+  },
+  "publicIPAllocationMethod": {
+    "value": "Dynamic"
+  }
 }
+}
+
+
+
