@@ -236,7 +236,8 @@ Tags              :
 ResourceId        : /subscriptions/6ebd2f8c-21d7-4e7c-a99c-2673781552f6/resourceGroups/complianceapp
 
 
-Template is valid.```
+Template is valid.
+```
  
 
 ==============================
